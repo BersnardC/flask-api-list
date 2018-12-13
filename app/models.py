@@ -59,7 +59,7 @@ def load_user(user_id):
 class Tasks (db.Model):
     __tablename__ = "tasks"
     id = db.Column('id', db.Integer, primary_key = True)
-    name = db.Column('title', db.String)
+    title = db.Column('title', db.String)
     description = db.Column('description', db.String)
     status_id = db.Column('status_id', db.Integer)
     created_at = db.Column('created_at', db.DateTime)
